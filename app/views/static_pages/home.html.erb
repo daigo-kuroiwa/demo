@@ -58,7 +58,7 @@
             <p class="detail">ー今後行きたいと思う施設をお気に入りすることができ、いつでも一覧として見ることができますー</p>
             <%= image_tag "fav.gif", size: '560x420' %>
           
-            <p>３.SNSアカウント直結機能</p>
+            <p  id="section1">３.SNSアカウント直結機能</p>
             <p class="detail">ーInstagram, Facebookアカウントへワンクリックでとび、現場の雰囲気を感じていただけますー</p>
              <%= image_tag "SNS.gif", size: '480x360' %>
             <p class="detail2">※全施設がアカウントを所持しているわけではありません</p>
@@ -138,7 +138,7 @@
 <section id="sample3" class="fade_off">     
             <div class="New_listing">
                 <h1>New Listing<h1>
-                    <p class="detail">~7/30最終更新~</p>
+                    <p class="detail">~9/2最終更新~</p>
                   　<% @lodges.each do |lodge| %>
                           <p class="hotel_name-2"><%= link_to lodge.lodge, lodge.hp_link,:style=>"color:#008080;" %></p>
                           <%= image_tag lodge.image.to_s %>　<%= image_tag lodge.image2.to_s %>　<%= image_tag lodge.image3.to_s %>

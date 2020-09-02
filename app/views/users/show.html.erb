@@ -4,46 +4,53 @@
 
 <div class="lodge_page">
     
-
+    <!--ーーーーーーーーーーーーーーーーーーーーーーーーーー  Likeページ変遷  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー-->
     <div class="buttons-coll-2">  
         <button class="custom-btn btn-5"><span><%= link_to 'Favorites', user_path(current_user), class: 'top_name' %></span></button>
     </div>
-    <div class="fav-intro"><p>~Let's add favorite lodges as much as you want~</p>
-    </div>
     
+    　<div class="fav-intro"><p>~Let's add favorite lodges as much as you want~</p>
+    　</div>
+    
+    　　<div class = "pass">
+        　<%= link_to "", root_path(anchor: 'section1'), class:"pass"%>
+    　　</div>
    
-<% @likes.each do |like| %>
+        <% @likes.each do |like| %>
         
-        <p class="hotel_name"><%= link_to like.lodge.lodge, like.lodge.hp_link,:style=>"color:#008080;" %></p>
+            <p class="hotel_name"><%= link_to like.lodge.lodge, like.lodge.hp_link,:style=>"color:#008080;" %></p>
         
-    <div class="icon_main">
-    <div class="icon1"><%= link_to like.lodge.instagram do %>
-      <span class="fab fa-instagram-square"></span>
-      <% end %>
-    </div>
+                <div class="icon_main">
+                    
+                    <div class="icon1"><%= link_to like.lodge.instagram do %>
+                      <span class="fab fa-instagram-square"></span>
+                    <% end %>
+                    </div>
     
-    <div class="icon2"><%= link_to like.lodge.facebook do %>
-      <span class="fab fa-facebook-square"></span>
-      <% end %>
-    </div>
+                    <div class="icon2"><%= link_to like.lodge.facebook do %>
+                      <span class="fab fa-facebook-square"></span>
+                    <% end %>
+                    </div>
     
-    <div class="heart-icon">
-      <div id="like-btn-<%= like.lodge.id %>">
-       <%= render 'likes/like', lodge: like.lodge %>
-      </div>
-    </div>
-  </div>
+                    <div class="heart-icon">
+                      <div id="like-btn-<%= like.lodge.id %>">
+                       <%= render 'likes/like', lodge: like.lodge %>
+                      </div>
+                    </div>
+                    
+                </div>
         
         
         
-        <%= image_tag like.lodge.image.to_s %>　<%= image_tag like.lodge.image2.to_s %>　<%= image_tag like.lodge.image3.to_s %>
-        <ul class=hotel_info>
-              <li><%= like.lodge.postal_code %></li>
-              <li><%= like.lodge.prefecture %><%= like.lodge.address %><button class="icon_form"><i class="fas fa-map-marker-alt"></i><%= link_to "Google map", like.lodge.map, class: 'map_image' %></button></li>
-              <li><%= like.lodge.phone_number %></li>
-              <li><%= like.lodge.roomtype %></li>
-        </ul>
-<% end %>
+                <%= image_tag like.lodge.image.to_s %>　<%= image_tag like.lodge.image2.to_s %>　<%= image_tag like.lodge.image3.to_s %>
+                    <ul class=hotel_info>
+                      <li><%= like.lodge.postal_code %></li>
+                      <li><%= like.lodge.prefecture %><%= like.lodge.address %><button class="icon_form"><i class="fas fa-map-marker-alt"></i><%= link_to "Google map", like.lodge.map, class: 'map_image' %></button></li>
+                      <li><%= like.lodge.phone_number %></li>
+                      <li><%= like.lodge.roomtype %></li>
+                </ul>
+        <% end %>
+        
 </div>
 
     

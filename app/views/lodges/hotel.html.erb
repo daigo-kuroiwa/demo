@@ -1,78 +1,88 @@
 <% provide(:title, "Hotel") %>
+
 <div class="lodge_page">
-<!--  検索拡張機能  -->
-<% if logged_in? %>
-
-<p>ホテル名検索</p>
-  <%= form_tag(lodges_hotel_path, :method => 'get' , class:'form4') do %>
-  <%= text_field_tag :search, '',class:'sbox4', placeholder:'ホテル名を入力　ex.箱根本箱' %>
-  <button class="sbtn4" type="submit"><i class="fas fa-search"></i></button>
-  <% end %>
-
-<div class="search_condition">
-  <p>エリア別検索</p>
-  <%= form_tag(lodges_hotel_path, :method => 'get' , class:'form4') do %>
-  <%= text_field_tag :search, '',class:'sbox4', placeholder:'都道府県を入力　ex.広島' %>
-  <button class="sbtn4" type="submit"><i class="fas fa-search"></i></button></div>
-  <% end %>
   
-<% end %>
+    <!--ーーーーーーーーーーーーーーーーーーーーーーーーーー  検索拡張機能  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー-->
+    <% if logged_in? %>
 
-<div class="buttons-coll">  
-<button class="custom-btn btn-4"><span><%= link_to 'Hotel', lodges_hotel_path, class: 'top_name' %></span></button>
-</div>
-
-<div class="dropdown">
-　<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-　　<%= @page %>
-　　<span class="caret"></span>
-　</button>
-　<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-　　<li><%= link_to("10", "/hotel/10") %></li>
-　　<li><%= link_to("20", "/hotel/20") %></li>
-　　<li><%= link_to("30", "/hotel/30") %></li>
-　　<li><%= link_to("50", "/hotel/50") %></li>
-　</ul>
-　<label>件ずつ表示する</label>
-</div>
-
-<%= will_paginate @lodges, :previous_label => ' &lt 前へ', :next_label => '次へ &gt' %>
-
-<section id="sample" class="fade_off">
-<% @lodges.each do |lodge| %>
-  <p class="hotel_name"><%= link_to lodge.lodge, lodge.hp_link,:style=>"color:#008080;" %></p>
-  
-  <% if logged_in? %>
-  <div class="icon_main">
-    <div class="icon1"><%= link_to lodge.instagram do %>
-      <span class="fab fa-instagram-square"></span>
+    <p>ホテル名検索</p>
+      <%= form_tag(lodges_hotel_path, :method => 'get' , class:'form4') do %>
+      <%= text_field_tag :search, '',class:'sbox4', placeholder:'ホテル名を入力　ex.箱根本箱' %>
+      <button class="sbtn4" type="submit"><i class="fas fa-search"></i></button>
       <% end %>
-    </div>
-    
-    <div class="icon2"><%= link_to lodge.facebook do %>
-      <span class="fab fa-facebook-square"></span>
+
+    <div class="search_condition">
+      <p>エリア別検索</p>
+      <%= form_tag(lodges_hotel_path, :method => 'get' , class:'form4') do %>
+      <%= text_field_tag :search, '',class:'sbox4', placeholder:'都道府県を入力　ex.広島' %>
+      <button class="sbtn4" type="submit"><i class="fas fa-search"></i></button></div>
       <% end %>
+  
+    <% end %>
+
+    <!--ーーーーーーーーーーーーーーーーーーーーーーーーーー  Hotelページ変遷  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー-->
+    <div class="buttons-coll">  
+      <button class="custom-btn btn-4"><span><%= link_to 'Hotel', lodges_hotel_path, class: 'top_name' %></span></button>
     </div>
+
+    <!--ーーーーーーーーーーーーーーーーーーーーーーーーーー  pagination機能  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー-->
+    <div class="dropdown">
+　    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+　　  <%= @page %>
+　　  <span class="caret"></span>
+　    </button>
+　              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+　　              <li><%= link_to("10", "/hotel/10") %></li>
+　　              <li><%= link_to("20", "/hotel/20") %></li>
+　　              <li><%= link_to("30", "/hotel/30") %></li>
+　             　 <li><%= link_to("50", "/hotel/50") %></li>
+　              </ul>
+　     <label>件ずつ表示する</label>
+    </div>
+
+
+  <%= will_paginate @lodges, :previous_label => ' &lt 前へ', :next_label => '次へ &gt' %>
+
+    <section id="sample" class="fade_off">
+      <% @lodges.each do |lodge| %>
+      
+        <p class="hotel_name"><%= link_to lodge.lodge, lodge.hp_link,:style=>"color:#008080;" %></p>
+  
+        <!--SNS・いいね機能--> 
+        <% if logged_in? %>
+          <div class="icon_main">
+            
+            <div class="icon1"><%= link_to lodge.instagram do %>
+              <span class="fab fa-instagram-square"></span>
+            <% end %>
+            </div>
     
-    <div class="heart-icon">
-      <div id="like-btn-<%= lodge.id %>">
-       <%= render 'likes/like', lodge: lodge %>
-      </div>
-    </div>
-  </div>
+            <div class="icon2"><%= link_to lodge.facebook do %>
+              <span class="fab fa-facebook-square"></span>
+            <% end %>
+            </div>
+    
+            <div class="heart-icon">
+              <div id="like-btn-<%= lodge.id %>">
+               <%= render 'likes/like', lodge: lodge %>
+              </div>
+            </div>
+            
+          </div>
   
-  <% end %>
+        <% end %>
   
-  <%= image_tag lodge.image.to_s %>　<%= image_tag lodge.image2.to_s %>　<%= image_tag lodge.image3.to_s %>
-  <ul class=hotel_info>
-  <li><%= lodge.postal_code %></li>
-  <li><%= lodge.prefecture %><%= lodge.address %><button class="icon_form"><i class="fas fa-map-marker-alt"></i><%= link_to "Google map", lodge.map, class: 'map_image' %></button></li>
-  <li><%= lodge.phone_number %></li>
-  <li><%= lodge.roomtype %></li>
-  </ul>
-<% end %>
-</section>
+          <%= image_tag lodge.image.to_s %>　<%= image_tag lodge.image2.to_s %>　<%= image_tag lodge.image3.to_s %>
+            <ul class=hotel_info>
+              <li><%= lodge.postal_code %></li>
+              <li><%= lodge.prefecture %><%= lodge.address %><button class="icon_form"><i class="fas fa-map-marker-alt"></i><%= link_to "Google map", lodge.map, class: 'map_image' %></button></li>
+              <li><%= lodge.phone_number %></li>
+              <li><%= lodge.roomtype %></li>
+            </ul>
+      <% end %>
+    </section>
 
 
-<%= will_paginate @lodges, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'%>
+  <%= will_paginate @lodges, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'%>
+  
 </div>
