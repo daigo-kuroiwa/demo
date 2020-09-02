@@ -2463,7 +2463,7 @@ Lodge.create!(lodge:  "KUMU 金沢 by THE SHARE HOTELS",
              facebook: "https://www.facebook.com/kumuthesharehotels",
              image:File.open("./app/assets/images/KUMU.main.jpg"),
              image2:File.open("./app/assets/images/KUMU.lobby.jpg"),
-             image3:File.open("./app/assets/images/KUMU.room.jpg")
+             image3:File.open("./app/assets/images/KUMU.room.png")
              )
              
 Lodge.create!(lodge:  "LYURO 東京清澄 by THE SHARE HOTELS",
@@ -2546,119 +2546,7 @@ Lodge.create!(lodge:  "PIECE HOSTEL SANJO",
              image3:File.open("./app/assets/images/PIECE.room.jpg")
              )
              
-Lodge.create!(lodge:  "ネストホテル広島八丁堀",
-             prefecture: "広島県",
-             postal_code: "〒730-0016",
-             address: "広島市中区幟町13-12",
-             phone_number: "TEL 082-225-6090",
-             map: "https://goo.gl/maps/uorCYckDDBNTcs898",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/hiroshima/",
-             roomtype: "Roomtype: Economy Double, Double, Economy Twin, Twin, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N八丁堀.main.jpg"),
-             image2:File.open("./app/assets/images/N八丁堀.lobby.jpg"),
-             image3:File.open("./app/assets/images/N八丁堀.room.jpg")
-             )
-             
-             
-Lodge.create!(lodge:  "ネストホテル東京半蔵門",
-             prefecture: "東京都",
-             postal_code: "〒102-0092",
-             address: "千代田区隼町2-18",
-             phone_number: "TEL 03-6261-4022",
-             map: "https://goo.gl/maps/9PrWTUQHC7jtfFFX6",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/tokyohanzomon/",
-             roomtype: "Roomtype: King, Economy Double, Standard Double, Economy Twin, Standard Twin, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N半蔵門.main.jpg"),
-             image2:File.open("./app/assets/images/N半蔵門.lobby.jpg"),
-             image3:File.open("./app/assets/images/N半蔵門.room.jpg")
-             )
-             
-Lodge.create!(lodge:  "ネストホテル大阪梅田",
-             prefecture: "大阪府",
-             postal_code: "〒530-0014",
-             address: "大阪市北区鶴野町2-15",
-             phone_number: "TEL 06-6485-8860",
-             map: "https://goo.gl/maps/7eTEqXRbWapyjHxz7",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/osakaumeda/",
-             roomtype: "Roomtype: Universal, Economy Triple, Triple, Economy Double, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N大阪.main.jpg"),
-             image2:File.open("./app/assets/images/N大阪.lobby.jpg"),
-             image3:File.open("./app/assets/images/N大阪.room.jpg")
-             )
-             
-Lodge.create!(lodge:  "ネストホテル京都四条烏丸",
-             prefecture: "京都府",
-             postal_code: "〒600-8424",
-             address: "京都市下京区山王町551",
-             phone_number: "TEL 075-341-2011",
-             map: "https://goo.gl/maps/DHa6AruHM5XsfkLTA",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/kyotoshijokarasuma/",
-             roomtype: "Roomtype: King, Triple, Double, Semi Double, Twin",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N京都.main.jpg"),
-             image2:File.open("./app/assets/images/N京都.lobby.jpg"),
-             image3:File.open("./app/assets/images/N京都.room.jpg")
-             )
-             
-Lodge.create!(lodge:  "ネストホテル広島駅前",
-             prefecture: "広島県",
-             postal_code: "〒732-0807",
-             address: "広島市南区荒神町3-11",
-             phone_number: "TEL 082-262-6250",
-             map: "https://g.page/NESTHOTELHIROSHIMASTATION?share",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/hiroshima-station/",
-             roomtype: "Roomtype: Studio Suite, Triple, Double, Twin, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N広島.main.jpg"),
-             image2:File.open("./app/assets/images/N広島.lobby.jpg"),
-             image3:File.open("./app/assets/images/N広島.room.jpg")
-             )
-             
-Lodge.create!(lodge:  "ネストホテル博多駅前",
-             prefecture: "福岡県",
-             postal_code: "〒812-0011",
-             address: "福岡市博多区博多駅前2-11-27",
-             phone_number: "TEL 092-260-1695",
-             map: "https://goo.gl/maps/rJci8i2qBBSLCUPC9",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/hakata/",
-             roomtype: "Roomtype: Triple, Double, Economy Double, Twin, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N博多.main.jpg"),
-             image2:File.open("./app/assets/images/N博多.lobby.jpg"),
-             image3:File.open("./app/assets/images/N博多.room.jpg")
-             )
-             
-Lodge.create!(lodge:  "ティサージホテル那覇",
-             prefecture: "沖縄県",
-             postal_code: "〒900-0036",
-             address: "那覇市西2-14-1",
-             phone_number: "TEL 098-861-1122",
-             map: "https://goo.gl/maps/mZVAXirgca4Kp6Lw7",
-             type: "hotel",
-             hp_link: "https://www.nesthotel.co.jp/tissagenaha/",
-             roomtype: "Roomtype: 2 single bed with extra bed, Economy Double, Twin, Single",
-             instagram: "https://www.instagram.com/nest_hotel_jp/?hl=ja",
-             facebook: "https://www.facebook.com/nesthoteljapan",
-             image:File.open("./app/assets/images/N那覇.main.jpg"),
-             image2:File.open("./app/assets/images/N那覇.lobby.jpg"),
-             image3:File.open("./app/assets/images/N那覇.room.jpg")
-             )
-             
+
 Lodge.create!(lodge:  "hanare",
              prefecture: "東京都",
              postal_code: "〒110-0001",
