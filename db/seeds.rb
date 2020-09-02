@@ -1761,22 +1761,7 @@ Lodge.create!(lodge:  "HOTEL POTMUM STAY & COFFEE",
              image3:File.open("./app/assets/images/POTMUM.room.jpg")
              )
              
-Lodge.create!(lodge:  "櫻湯山茱萸",
-             prefecture: "山形県",
-             postal_code: "〒999-2211",
-             address: "南陽市赤湯740",
-             phone_number: "TEL 0238-43-3020",
-             map: "https://goo.gl/maps/FifEmh6bh3vLW9f27",
-             type: "ryokan",
-             hp_link: "https://sansyuyu.jp/",
-             roomtype: "Roomtype: Japanese Modern romm for 2~5 people",
-             instagram: "",
-             facebook: "https://www.facebook.com/sakurayusansyuyu",
-             image:File.open("./app/assets/images/櫻湯.main.png"),
-             image2:File.open("./app/assets/images/櫻湯.lobby.png"),
-             image3:File.open("./app/assets/images/櫻湯.room.png")
-             )
-             
+
 Lodge.create!(lodge:  "Hostel KIKO",
              prefecture: "宮城県",
              postal_code: "〒984-0074",
