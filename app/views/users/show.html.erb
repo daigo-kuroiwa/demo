@@ -12,8 +12,8 @@
     　<div class="fav-intro"><p>~Let's add favorite lodges as much as you want~</p>
     　</div>
     
-    　　<div class = "pass">
-        　<%= link_to "", root_path(anchor: 'section1'), class:"pass"%>
+    　　<div class = "goto">
+        　<%= link_to "Go to Entrance", root_path(anchor: 'section1'), class: 'gotoname', id: "pass" %>
     　　</div>
    
         <% @likes.each do |like| %>
