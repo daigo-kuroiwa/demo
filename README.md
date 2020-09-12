@@ -1,4 +1,5 @@
 # Lodgers-exploring
+Lodgers-exploring is a travel web application which you can search some grate lodges as if you are travaling for Ruby on Rails.  
 You can check out the app on [Heroku](https://lodgers-exploring.herokuapp.com/).
 
 ![image](https://user-images.githubusercontent.com/69783643/92995134-92068d80-f53b-11ea-8336-af0397fb7797.png)  
@@ -12,7 +13,6 @@ You can check out the app on [Heroku](https://lodgers-exploring.herokuapp.com/).
 
 
 # About
-Lodgers-exploring is a travel web application which you can search some grate lodges as if you are travaling for Ruby on Rails.
 There are four types of lodges like Hotel, Hostel, Ryokan and camp. All of these are located in Japan and it gets more than 8.2 average point on Booking.com review.
 Like it wrote, you can not only search some great lodges, but also you can add it as a favorite lodge on your page. As a result, when you plan to travel somewhere, you can use this application in order to find your favorite lodge and see their SNS easily.
 
@@ -36,3 +36,13 @@ Like it wrote, you can not only search some great lodges, but also you can add i
 
 
 ![SNS](https://user-images.githubusercontent.com/69783643/92995638-2b37a300-f540-11ea-9480-1765f37da8f7.gif)
+
+# Requirement
+- Ruby  2.6.3
+- Rails 5.0.3
+- PostgreSQL
+
+# Technology used
+This software uses the following open source packages:
+
+![ruby logo](https://user-images.githubusercontent.com/69783643/92996195-c2065e80-f544-11ea-8ef1-8e30a0c888fc.png)
