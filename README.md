@@ -64,5 +64,5 @@ But I'll be upgrade more functions below.
 # Contribute
 Pull requests are welcome!! 😊
 
-# Licence
-![MIT](https://choosealicense.com/licenses/mit/)
+# License
+"Lodgers-exploring" is under MIT License
