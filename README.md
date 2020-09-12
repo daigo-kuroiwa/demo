@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Lodgers-exploring
 Lodgers-exploring is a travel web application which you can search some grate lodges as if you are travaling for Ruby on Rails.  
 You can check out the app on [Heroku](https://lodgers-exploring.herokuapp.com/).
@@ -13,7 +11,6 @@ You can check out the app on [Heroku](https://lodgers-exploring.herokuapp.com/).
 
 
 
->>>>>>> 66ea09ee0c014f94dd7191d2ab92e1a3f36610bc
 
 # About
 There are four types of lodges like Hotel, Hostel, Ryokan and camp. All of these are located in Japan and it gets more than 8.2 average point on Booking.com review.
