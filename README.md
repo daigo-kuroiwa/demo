@@ -1,4 +1,4 @@
-<h1>Lodgers-exploring</h1>
+#Lodgers-exploring
 
 
 <p>Lodgers-exploring is a travel web application which you can search some grate lodges as if you are travaling for Ruby on Rails.</p>
