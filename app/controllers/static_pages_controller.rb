@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @lodges = Lodge.find([89,104,156]) 
+    @lodges = Lodge.find([18,198,205]) 
   end
 
   def concept

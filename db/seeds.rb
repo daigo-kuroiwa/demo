@@ -243,6 +243,70 @@ Lodge.create!(lodge:  "guntu",
              image2:File.open("./app/assets/images/guntu.lobby.jpg"),
              image3:File.open("./app/assets/images/guntu.room.jpg")
              )
+             
+ Lodge.create!(lodge:  "Hotel Mei Fukuoka Tenjin",
+             prefecture: "福岡県",
+             postal_code: "〒810-0003",
+             address: "福岡市中央区春吉2-16-19",
+             phone_number: "TEL 092-771-6221",
+             map: "https://g.page/hotelmei?share",
+             type: "hotel",
+             hp_link: "https://seven-garden.com/ja/hotel/Mei",
+             roomtype: "Roomtype: Standard Room, Exective Double, Standard Double",
+             instagram: "https://www.instagram.com/hotel_mei/",
+             facebook: "https://www.facebook.com/HotelMeiFUK/",
+             image:File.open("./app/assets/images/mei.main.jpg"),
+             image2:File.open("./app/assets/images/mei.lobby.jpg"),
+             image3:File.open("./app/assets/images/mei.room.jpg")
+             )
+             
+ Lodge.create!(lodge:  "Hotel Vintage",
+             prefecture: "東京都",
+             postal_code: "〒104-0042",
+             address: "中央区入船2-10-7",
+             phone_number: "TEL 03-6262-8017",
+             map: "https://goo.gl/maps/L72ji8MGJ8W6p5YW9",
+             type: "hotel",
+             hp_link: "https://seven-garden.com/ja/hotel/vintage",
+             roomtype: "Roomtype: Junior Suite",
+             instagram: "https://www.instagram.com/hotel_vintage/",
+             facebook: "https://www.facebook.com/Hotel-Vintage-1611455895575213/",
+             image:File.open("./app/assets/images/vintage.main.jpg"),
+             image2:File.open("./app/assets/images/vintage.lobby.jpg"),
+             image3:File.open("./app/assets/images/vintage.room.jpg")
+             )                         
+             
+ Lodge.create!(lodge:  "SEVEN GARDEN",
+             prefecture: "東京都",
+             postal_code: "〒111-0032",
+             address: "台東区浅草1-34-2",
+             phone_number: "TEL 03-5830-7140",
+             map: "https://goo.gl/maps/w8h1RPuzr1ScLbL56",
+             type: "hotel",
+             hp_link: "https://seven-garden.com/ja/hotel/SEVENGARDEN",
+             roomtype: "Roomtype: Family Suite with balcony, Deluxe room for 4 people, Standard room for 4 people, Standard Triple",
+             instagram: "",
+             facebook: "https://www.facebook.com/sevengardenhostel/",
+             image:File.open("./app/assets/images/GARDEN.main.jpg"),
+             image2:File.open("./app/assets/images/GARDEN.lobby.jpg"),
+             image3:File.open("./app/assets/images/GARDEN.room.jpg")
+             )                         
+             
+ Lodge.create!(lodge:  "KIKKA",
+             prefecture: "東京都",
+             postal_code: "〒101-0031",
+             address: "千代田区東神田1-3-3",
+             phone_number: "TEL 03-5825-4826",
+             map: "https://goo.gl/maps/mcHdXBdAPn46aJSW8",
+             type: "hotel",
+             hp_link: "https://seven-garden.com/ja/hotel/KIKKA",
+             roomtype: "Roomtype: Studio",
+             instagram: "https://www.instagram.com/hostel_kikka/",
+             facebook: "https://www.facebook.com/KIKKA-1785939408095239/",
+             image:File.open("./app/assets/images/KIKKA.main.jpg"),
+             image2:File.open("./app/assets/images/KIKKA.lobby.jpg"),
+             image3:File.open("./app/assets/images/KIKKA.room.jpg")
+             )                         
 
 Lodge.create!(lodge:  "ホテルインディゴ箱根強羅",
              prefecture: "神奈川県",
